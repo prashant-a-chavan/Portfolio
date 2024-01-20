@@ -25,7 +25,7 @@ if selected_section == "Intro":
 
     st.write("Email: reposeful8887@gmail.com")
     st.write("Phone: +91 8197064954")
-    st.write("LinkedIn: [linkedin.com/in/johndoe](https://www.linkedin.com/in/prashant/)")
+    st.write("LinkedIn: www.linkedin.com/in/c-prashant")
     st.write("GitHub: https://github.com/prashant-a-chavan")
 
 # Education section
@@ -37,7 +37,7 @@ if selected_section == "Education":
     st.markdown("")
     # Create a table for education details
     education_data = pd.DataFrame([
-        ["JSS Science and Technology University Mysuru", "Pursuing MCA", "2023 - 2024", "8.58 CGPA"],
+        ["JSS Science and Technology University Mysuru", "Pursuing MCA", "2023 - 2024", "8.57 CGPA"],
         ["Karnataka Science College Dharwad", "BCA", "2019 - 2022", "85.90 %"],
         ["Government PU College Kokatnur", "PUC", "2017 - 2019", "69.16 %"],
         ["Government High School Kokatnur", "SSLC", "2016 - 2017", "67.68 %"],
@@ -65,7 +65,7 @@ if selected_section == "Projects":
     st.write("## Projects")
 
     # Project selection dropdown
-    project_options = ["Select a Project","BasketXpert", "Student Attendance Management System", "Project 3"]
+    project_options = ["Select a Project","BasketXpert", "Student Attendance Management System"]
     selected_project = st.selectbox("",project_options)
 
     # Display selected project details
@@ -102,28 +102,25 @@ if selected_section == "Achievements and Certifications":
 
     achievements = pd.DataFrame([
     ["First Place, BITS AND BYTES(CODING) event in 'TAKSHAK 2K22 State Level IT Fest' Organized by: Karnataka University Dharwad"],
-    ["Participation in 'EVOGEN 11.O' event  Organized by: KLS Gogte Institute of Technology Belagavi"],
-    ["Secured 45th rank out of 948 participants from our Institute, In GeeksForGeeks Coding Platform"],
-    ["and 616976th rank in Leetcode"]],columns=["Achievements"])
+    ["Participation in 'EVOGEN 11.O' event  Organized by: KLS Gogte Institute of Technology Belagavi"]],columns=["Achievements"])
     st.write(achievements.to_markdown(index=False))
     st.markdown("")
     st.markdown("")
     st.markdown("")
 
-    # st.write("#### Certifications")
+    st.write("#### Certifications")
 
-    # achievements = pd.DataFrame([
-    # ["First Place, BITS AND BYTES(CODING) event in 'TAKSHAK 2K22 State Level IT Fest' Organized by: Karnataka University Dharwad"],
-    # ["Participation in 'EVOGEN 11.O' event  Organized by: KLS Gogte Institute of Technology Belagavi"],
-    # ["Secured 45th rank out of 948 participants from our Institute, In GeeksForGeeks Coding Platform"],
-    # ["and 616976th rank in Leetcode"]],columns=["Achievements"])
-    # st.write(achievements.to_markdown(index=False))
+    achievements = pd.DataFrame([
+    ["SQL (Basic) Certificate from HackerRank"],
+    ["JAVA (Basic) Certificate from HackerRank"],
+    ["WEB TECHNOLOGY 10 DAYS WORKSHOP from APPONIX academy"]],columns=["Achievements"])
+    st.write(achievements.to_markdown(index=False))
 
 st.sidebar.markdown(
     """
     <div style="position: relative; top: 15vh; text-align: left; width: 100%;">
         <p style="font-size: 12px;">gmail : reposeful8887@gmail.com</p>
-        <p style="font-size: 12px;"><a href="https://drive.google.com/file/d/1rlrPiQmM8ZnGeLFPbhwahqxMHE_Pa_UQ/view?usp=drive_link" target="_blank">Click here for Resume</a></p>
+        <p style="font-size: 12px;"><a href="https://drive.google.com/file/d/1ghUx8qwa_QzOg7Ifx_6Djytg6Xugjput/view?usp=drive_link" target="_blank">Click here for Resume</a></p>
     </div>
     """,
     unsafe_allow_html=True,
